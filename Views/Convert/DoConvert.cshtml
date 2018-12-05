@@ -1,0 +1,43 @@
+@model ConvertViewModels
+
+<form asp-controller="Convert" asp-action="ShowConvert" method="POST">
+        
+    Val To Convert:<br>    
+    <input type="text" asp-for="@Model.ValToConvert">
+    <br>
+    
+    Convert Type:<br>
+    <select type="text" asp-for="@Model.ConvertType"> 
+        <option value="CelsiusToFahrenheit"> Celcius To Fahrenheit</option>
+        <option value="CelsiusToKelvin"> Celcius To Kelvin</option>
+        <option value="FahrenheitToCelsius"> Fahrenheit To Celcius</option>
+        <option value="FahrenheitToKelvin"> Fahrenheit To Kelvin</option>
+        <option value="KelvinToCelsius"> Kelvin To Celcius</option>
+        <option value="KelvinToFahrenheit"> Kelvin To Fahrenheit</option>
+        
+        <option value="MetersToFeet"> Meters To Feet</option>
+        <option value="MetersToYards"> Meters To Yards</option>
+        <option value="FeetToMeters"> Feet To Meters</option>
+        <option value="FeetToYards"> Feet To Yards</option>
+        <option value="YardsToMeters"> Yards To Meters</option>
+        <option value="YardsToFeet"> Yards To Feet</option>
+        
+        <option value="OuncesToGrams"> Ounces To Grams</option>
+        <option value="OouncesToPounds"> Ounces To Pounds</option>
+        <option value="OuncesToKilograms"> Ounces To Kilograms</option>
+        <option value="PoundsToOunces"> Pounds To Ounces</option>
+        <option value="PoundsToGrams"> Pounds To Grams</option>
+        <option value="PoundsToKilograms"> Pounds To Kilograms</option>
+        <option value="GramsToOunces"> Grams To Ounces</option>
+        <option value="GramsToPounds"> Grams To Pounds</option>
+        <option value="GramsToKilograms"> Grams To Kilograms</option>
+        <option value="KilogramsToOunces"> Kilograms To Ounces</option>
+        <option value="KilogramsToPounds"> Kilograms To Pounds</option>
+        <option value="KilogramsToGrams"> Kilograms To Grams</option>
+    </select>
+
+    <br>
+      
+    <br>
+    <input type="submit" value="Submit"> 
+</form>
